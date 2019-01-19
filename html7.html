@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HTML Tables</title>
+	<meta charset="utf-8">
+    <style>
+        table,th,td
+        {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        th,td
+        {
+            padding: 15px;
+        }
+        th
+        {
+            text-align: left;
+        }
+        table
+        {
+            border-spacing: 10px;
+        }
+        #t01
+        {
+          background-color: #f1c1c1;
+        }
+    </style>
+</head>
+<body>
+      <table style="width: 100%;">
+        <caption>Prabhas Movie Details</caption>
+          <tr>
+              <th>Movie Name</th>
+              <th colspan="2">Hero</th>
+              <th>Actress</th>
+              <th>Villan</th>
+          </tr>
+          <tr>
+              <td id="t01">Bahubali 2</td>
+              <td>Prabhas</td>
+              <td>Rajamouli</td>
+              <td>Anuskha Shetty</td>
+              <td>Rana</td>
+          </tr>
+          <tr>
+              <td>Saaho</td>
+              <td>Prabhas</td>
+              <td>Sujeeth</td>
+              <td>Shraddha Kapoor</td>
+              <td>Niel Nitin Mukesh</td>
+          </tr>
+      </table>
+</body>
+</html>

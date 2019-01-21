@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Block and Inline Elements</title>
+	<meta charset="utf-8">
+     <style>
+          .greetings
+          {
+               background-color: dodgerblue;
+               margin: 20px;
+               padding: 20px;
+          }
+          .moral
+          {
+               color: violet;
+               text-decoration: underline;
+          }
+     </style>
+</head>
+<body>
+     <div style="background-color: black;color: white;">Hello
+          <p>
+               Hello is a greeting uesd to greet people.
+          </p>
+     </div>
+     <div>Nandhu!!!!!</div>
+     <span style="color: red;">Hello</span>
+     <span>Vardhan!!!!</span>
+     <div class="greetings">
+          <h2 class="moral">Greetings</h2>
+          <p>
+               Good Morning!<br>
+               Good Afternoon!<br>
+               Good Evening!<br>
+               Good Night!
+          </p>
+     </div>
+     <h1><span class="moral greetings">PEOPLE</span> NEED TO THINK</h1>
+     <h1><span class="greetings">PEOPLE</span> NEED TO THINK</h1>
+     <button onclick="myFunction()">Hide Elements</button>
+     <h2 class="greetings">Good Morning</h2>
+     <p>Good Night Guys</p>
+     <h2 class="greetings">Good Afternoon</h2>
+     <p>Good Evening Guys</p>
+     <script>
+          function myFunction(){
+               var x =document.getElementsByClassName("greetings");
+               for (var i = 0; i < x.length; i++) {
+                     x[i].style.display = "none";
+                  }
+          }
+     </script>
+</body>
+</html>

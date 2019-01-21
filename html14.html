@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <title>HTML Forms Elements</title>
+     <meta charset="utf-8">
+</head>
+<body>
+     <form action="html12.html" target="_blank" method="get">
+          <fieldset>
+               <legend>Personal Information</legend>
+               First Name:<br>
+               <input type="text" name="firstname"><br>
+               Middle Name:<br>
+               <input type="" name=""><br>
+               Last Name:<br>
+               <input type="text" name="lastname"><br>
+               <input type="radio" name="gender" value="male">Male<br>
+               <input type="radio" name="gender" value="femlale">Female<br>
+               <select name="movies" size="3" multiple>
+                    <option value="bahubali 2"> Bahubali 2</option>
+                    <option value="Saaho"> Saaho</option>
+                    <option value="mirchi">Mirchi</option>
+                    <option value="Bujjigadu">Bujjigadu</option>
+               </select><br><br>
+               <input list="cars" name="cars">
+               <datalist id="cars">
+                    <option value="Volvo"></option>
+                    <option value="Audi"></option>
+                    <option value="Ford"></option>
+               </datalist><br><br>
+               <input type="submit" value="submit"><br>
+          </fieldset><br>
+          <textarea name="message" rows="5" cols="20">Bahubali 2 is the highest grosser in the world.</textarea><br>
+          <button type="button" onclick="alert('Please Dont Touch Again')">Click Me!</button><br>
+          <form oninput = "x.value=parseInt(a.value)+parseInt(b.value)">
+               0
+               <input type="range" id="a" name="a" value="50">
+               100+
+               <input type="rahnge" id="b" name="b" value="50">
+               =
+               <output name="x" for="a b"></output>
+               <br><br>
+               <input type="submit">
+          </form>    
+     </form>
+</body>
+</html>

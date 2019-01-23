@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <title>HTML GRAPHICS</title>
+     <meta name="viewport" content = "width = device width,initial scale = 1.0">
+</head>
+<body>
+    <canvas id="myCanvas" width="200" height="100" style="border: 1px solid #d3d3d3;"></canvas>
+    <script>
+        var c = document.getElementById("myCanvas");
+        var ctx = c.getContext("2d");
+        ctx.moveTo(0,0);
+        ctx.lineTo(200,100);
+        ctx.stroke();
+    </script>
+    <br><br>
+    <canvas id="Nandhu" width="200" height="100" style="border: 1px solid #d3d3d3;"></canvas>
+    <script>
+        var c =  document.getElementById("Nandhu");
+        var ctx = c.getContext("2d");
+        ctx.font = "30px Arial";
+        ctx.fillText("Nandha",10,50);
+    </script>
+    <br><br>
+    <canvas id="pavitra" width="200" height="100" style="border: 1px solid #d3d3d3;"></canvas>
+    <script>
+        var c =  document.getElementById("pavitra");
+        var ctx = c.getContext("2d");
+        ctx.font = "30px Arial";
+        ctx.strokeText("Nandha",20,80);
+    </script>
+    <br><br>
+    <canvas id="gradient" width="200" height="100" style="border: 1px solid #d3d3d3;"></canvas>
+    <script>
+        var c =  document.getElementById("gradient");
+        var ctx = c.getContext("2d");
+        var grd = ctx.createLinearGradient(0,0,200,0);
+        grd.addColorStop(0,"red");
+        grd.addColorStop(1,"white");
+        ctx.fillStyle = grd;
+        ctx.fillRect(10,10,150,80);
+    </script>
+    <br><br>
+    <canvas id="radial" width="200" height="100" style="border: 1px solid #d3d3d3;"></canvas>
+    <script>
+        var c =  document.getElementById("radial");
+        var ctx = c.getContext("2d");
+        var grd = ctx.createRadialGradient(75,50,5,90,60,100);
+        grd.addColorStop(0,"red");
+        grd.addColorStop(1,"white");
+        ctx.fillStyle = grd;
+        ctx.fillRect(10,10,150,80);
+    </script>
+    <br><br>
+    <p>Image to use:</p>
+    <img id="bahubali" src="bahubali.jpg" alt="Bahubali" width="250" height="270">
+    <p>Canvas to fill:</p>
+    <canvas id="saaho" width="250" height="300" style="border: 2px solid #d3d3d3;"></canvas>
+    <p>
+        <button onclick="saaho()">
+            Click me!
+        </button>
+    </p>
+    <script>
+        function saaho()
+        {
+            var c = document.getElementById("saaho");
+            var ctx = c.getContext("2d");
+            var img = document.getElementById("bahubali");
+            ctx.drawImage(img,10,10);
+        }
+    </script>
+</body>
+</html>
